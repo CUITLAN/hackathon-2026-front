@@ -1,6 +1,5 @@
 import { Geist, JetBrains_Mono } from "next/font/google"
 
-import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import "./globals.css"
 
@@ -31,7 +30,7 @@ export default function RootLayout({
       )}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        {children}
       </body>
     </html>
   )
